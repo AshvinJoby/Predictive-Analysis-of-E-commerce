@@ -1,4 +1,4 @@
-# Predictive-Analysis-of-E-commerce
+# Predictive Analysis of E-commerce
 
 Frontend: 
 - HTML - Web Page Editing
