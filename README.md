@@ -1,9 +1,9 @@
 # Predictive-Analysis-of-E-commerce
 
 Frontend: 
-- HTML - Full Stack Framework - Routing, Authentication
+- HTML - Web Page Editing
 - CSS - UI Library
-- JavaScript - Object Relational Mapper to communicate with database
+- JavaScript - Adding dynamc effects to webpages
 
 Backend:
 - MongoDB(NoSQL) - Database Integration
