@@ -3,7 +3,7 @@
 Frontend: 
 - HTML - Web Page Editing
 - CSS - UI Library
-- JavaScript - Adding dynamc effects to webpages
+- JavaScript - Adding dynamic effects to webpages
 
 Backend:
 - MongoDB(NoSQL) - Database Integration
