@@ -39,12 +39,6 @@ for cols in num:
     df[cols] = df[cols].mask(df[cols]<lr, lr, )
     df[cols] = df[cols].mask(df[cols]>ur, ur, )
 
-sns.set_theme(style="darkgrid", palette="muted")
-fig, ax = plt.subplots(figsize=(16,7))
-sns.boxplot(data=df)
-plt.xticks(rotation=45)
-plt.show()
-
 df.isnull().sum()
 df['Tenure'].fillna(df.Tenure.median(), inplace=True)
 df['WarehouseToHome'].fillna(df.WarehouseToHome.median(), inplace=True)
@@ -68,6 +62,7 @@ for col,subplot in zip(cat, ax.flatten()):
     total = df.value_counts(col).sort_index()
     res1 = temp/total*100
     subplot.pie(labels = res1.index, x = res1.values, autopct='%.0f%%',textprops={'fontsize': 16})
+
 for i, subplot in zip(num, ax.flatten()):
     sns.histplot(df[i], kde = True, ax=subplot)
 fig, ax = plt.subplots(2, 6, figsize=(30, 10))
